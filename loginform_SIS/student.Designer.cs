@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblWelcomeStudent = new Label();
             panel1 = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // lblWelcomeStudent
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(169, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(337, 33);
-            label1.TabIndex = 0;
-            label1.Text = "Hello! Welcome Student!";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            lblWelcomeStudent.AutoSize = true;
+            lblWelcomeStudent.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcomeStudent.Location = new Point(169, 11);
+            lblWelcomeStudent.Name = "lblWelcomeStudent";
+            lblWelcomeStudent.Size = new Size(337, 33);
+            lblWelcomeStudent.TabIndex = 0;
+            lblWelcomeStudent.Text = "Hello! Welcome Student!";
+            lblWelcomeStudent.TextAlign = ContentAlignment.TopCenter;
             // 
             // panel1
             // 
             panel1.BackColor = Color.MediumSeaGreen;
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblWelcomeStudent);
             panel1.Location = new Point(0, -2);
             panel1.Name = "panel1";
             panel1.Size = new Size(703, 54);
@@ -61,6 +61,7 @@
             Controls.Add(panel1);
             Name = "student";
             Text = "student";
+            Load += student_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -68,7 +69,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblWelcomeStudent;
         private Panel panel1;
     }
 }

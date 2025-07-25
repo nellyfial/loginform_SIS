@@ -12,9 +12,16 @@ namespace loginform_SIS
 {
     public partial class student : Form
     {
-        public student()
+        private string userStudent;
+        public student(string student)
         {
             InitializeComponent();
+            this.userStudent = student;
+        }
+
+        private void student_Load(object sender, EventArgs e)
+        {
+            lblWelcomeStudent.Text = $"Hello! Welcome {userStudent}!";
         }
     }
 }

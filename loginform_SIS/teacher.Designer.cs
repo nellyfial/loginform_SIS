@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
+            lblWelcomeTeacher = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.MediumSeaGreen;
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblWelcomeTeacher);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(703, 54);
             panel1.TabIndex = 0;
             // 
-            // label1
+            // lblWelcomeTeacher
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(172, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(341, 33);
-            label1.TabIndex = 1;
-            label1.Text = "Hello! Welcome Teacher!";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            lblWelcomeTeacher.AutoSize = true;
+            lblWelcomeTeacher.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcomeTeacher.Location = new Point(172, 9);
+            lblWelcomeTeacher.Name = "lblWelcomeTeacher";
+            lblWelcomeTeacher.Size = new Size(341, 33);
+            lblWelcomeTeacher.TabIndex = 1;
+            lblWelcomeTeacher.Text = "Hello! Welcome Teacher!";
+            lblWelcomeTeacher.TextAlign = ContentAlignment.TopCenter;
             // 
             // teacher
             // 
@@ -61,6 +61,7 @@
             Controls.Add(panel1);
             Name = "teacher";
             Text = "teacher";
+            Load += teacher_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -69,6 +70,6 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
+        private Label lblWelcomeTeacher;
     }
 }

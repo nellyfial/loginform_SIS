@@ -43,12 +43,12 @@ namespace loginform_SIS
                                 this.Hide();
                                 break;
                             case 2:
-                                student studentform = new student();
+                                student studentform = new student(username);
                                 studentform.Show();
                                 this.Hide();
                                 break;
                             case 3:
-                                teacher teacherform = new teacher();
+                                teacher teacherform = new teacher(username);
                                 teacherform.Show();
                                 this.Hide();
                                 break;
