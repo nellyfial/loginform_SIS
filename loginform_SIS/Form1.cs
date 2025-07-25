@@ -17,7 +17,7 @@ namespace loginform_SIS
             string password = this.textBox2.Text;
             textBox2.UseSystemPasswordChar = true;
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SIS;Integrated Security=True;TrustServerCertificate=True";
+            string connectionString = "Data Source=LAB4-PC14\\LAB3PC32;Initial Catalog=SIS;Integrated Security=True;TrustServerCertificate=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -38,13 +38,19 @@ namespace loginform_SIS
                         switch (role_Id)
                         {
                             case 1:
-                                MessageBox.Show("1, Hello! Welcome Admin!");
+                                admin adminform = new admin();
+                                adminform.Show();
+                                this.Hide();
                                 break;
                             case 2:
-                                MessageBox.Show("2, Hello! Welcome Student!");
+                                student studentform = new student();
+                                studentform.Show();
+                                this.Hide();
                                 break;
                             case 3:
-                                MessageBox.Show("3, Hello! Welcome Teacher!");
+                                teacher teacherform = new teacher();
+                                teacherform.Show();
+                                this.Hide();
                                 break;
                             default:
                                 MessageBox.Show("Unknown User:(");
