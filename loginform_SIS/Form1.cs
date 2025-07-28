@@ -17,7 +17,7 @@ namespace loginform_SIS
             string password = this.textBox2.Text;
             textBox2.UseSystemPasswordChar = true;
 
-            string connectionString = "Data Source=LAB4-PC14\\LAB3PC32;Initial Catalog=SIS;Integrated Security=True;TrustServerCertificate=True";
+            string connectionString = "Data Source=LAB4-PC28\\SQLEXPRESS;Initial Catalog=SIS;Integrated Security=True;TrustServerCertificate=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
