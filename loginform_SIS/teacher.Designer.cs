@@ -39,16 +39,16 @@
             panel1.Controls.Add(lblWelcomeTeacher);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(703, 54);
+            panel1.Size = new Size(703, 51);
             panel1.TabIndex = 0;
             // 
             // lblWelcomeTeacher
             // 
             lblWelcomeTeacher.AutoSize = true;
-            lblWelcomeTeacher.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcomeTeacher.Location = new Point(172, 9);
+            lblWelcomeTeacher.Font = new Font("Arial Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcomeTeacher.Location = new Point(213, 9);
             lblWelcomeTeacher.Name = "lblWelcomeTeacher";
-            lblWelcomeTeacher.Size = new Size(341, 33);
+            lblWelcomeTeacher.Size = new Size(272, 27);
             lblWelcomeTeacher.TabIndex = 1;
             lblWelcomeTeacher.Text = "Hello! Welcome Teacher!";
             lblWelcomeTeacher.TextAlign = ContentAlignment.TopCenter;

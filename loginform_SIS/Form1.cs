@@ -38,7 +38,7 @@ namespace loginform_SIS
                         switch (role_Id)
                         {
                             case 1:
-                                admin adminform = new admin();
+                                admin adminform = new admin(username);
                                 adminform.Show();
                                 this.Hide();
                                 break;

@@ -36,10 +36,10 @@
             // lblWelcomeStudent
             // 
             lblWelcomeStudent.AutoSize = true;
-            lblWelcomeStudent.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcomeStudent.Location = new Point(169, 11);
+            lblWelcomeStudent.Font = new Font("Arial Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcomeStudent.Location = new Point(221, 11);
             lblWelcomeStudent.Name = "lblWelcomeStudent";
-            lblWelcomeStudent.Size = new Size(337, 33);
+            lblWelcomeStudent.Size = new Size(268, 27);
             lblWelcomeStudent.TabIndex = 0;
             lblWelcomeStudent.Text = "Hello! Welcome Student!";
             lblWelcomeStudent.TextAlign = ContentAlignment.TopCenter;
@@ -50,7 +50,7 @@
             panel1.Controls.Add(lblWelcomeStudent);
             panel1.Location = new Point(0, -2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(703, 54);
+            panel1.Size = new Size(703, 51);
             panel1.TabIndex = 1;
             // 
             // student

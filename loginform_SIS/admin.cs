@@ -12,9 +12,16 @@ namespace loginform_SIS
 {
     public partial class admin : Form
     {
-        public admin()
+        private string userAdmin;
+        public admin(string admin)
         {
             InitializeComponent();
+            this.userAdmin = admin;
+        }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+            lblWelcomeAdmin.Text = $"Hello! Welcome {userAdmin}!";
         }
     }
 }
