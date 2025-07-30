@@ -21,7 +21,7 @@ namespace loginform_SIS
 
         private void student_Load(object sender, EventArgs e)
         {
-            lblWelcomeStudent.Text = $"Hello! Welcome {userStudent}!";
+            lblWelcomeStudent.Text = $"Welcome {userStudent}!";
         }
     }
 }

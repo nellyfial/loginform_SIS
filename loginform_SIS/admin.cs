@@ -21,7 +21,7 @@ namespace loginform_SIS
 
         private void admin_Load(object sender, EventArgs e)
         {
-            lblWelcomeAdmin.Text = $"Hello! Welcome {userAdmin}!";
+            lblWelcomeAdmin.Text = $"Welcome {userAdmin}!";
         }
     }
 }

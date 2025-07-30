@@ -53,7 +53,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.MediumSeaGreen;
+            label1.ForeColor = Color.SeaGreen;
             label1.Location = new Point(428, 42);
             label1.Name = "label1";
             label1.Size = new Size(220, 33);

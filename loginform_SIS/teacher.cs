@@ -21,7 +21,7 @@ namespace loginform_SIS
 
         private void teacher_Load(object sender, EventArgs e)
         {
-            lblWelcomeTeacher.Text = $"Hello! Welcome {userTeacher}!";
+            lblWelcomeTeacher.Text = $"Welcome {userTeacher}!";
         }
     }
 }
